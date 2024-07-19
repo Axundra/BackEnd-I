@@ -19,7 +19,7 @@ global.productos = [{
     status: true,
     stock: 0,
     category: "",
-    propiedad: "default"
+    propiedad: "HardCodeado"
 }, {
     id: 1,
     title: "",
@@ -29,14 +29,20 @@ global.productos = [{
     status: false,
     stock: 0,
     category: "",
-    propiedad: "default"
+    propiedad: "HardCodeado"
 }];
 
 global.carrito = [{
-    id: 123,
+    id: 0,
     products: [
-        { productID: 1, cantidad: 2, propiedad: "default" },
-        { productID: 2, cantidad: 345, propiedad: "default" }
+        { productID: 5, cantidad: 4, propiedad: "HardCodeado" },
+        { productID: 2, cantidad: 5, propiedad: "HardCodeado" }
+    ]
+},{
+    id: 1,
+    products: [
+        { productID: 0, cantidad: 3, propiedad: "HardCodeado" },
+        { productID: 4, cantidad: 2, propiedad: "HardCodeado" }
     ]
 }]
 
