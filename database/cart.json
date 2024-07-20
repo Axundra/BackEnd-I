@@ -1,0 +1,32 @@
+[
+    {
+        "id": 0,
+        "products": [
+            {
+                "productID": 5,
+                "cantidad": 4,
+                "propiedad": "HardCodeado"
+            },
+            {
+                "productID": 2,
+                "cantidad": 5,
+                "propiedad": "HardCodeado"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "products": [
+            {
+                "productID": 0,
+                "cantidad": 3,
+                "propiedad": "HardCodeado"
+            },
+            {
+                "productID": 4,
+                "cantidad": 2,
+                "propiedad": "HardCodeado"
+            }
+        ]
+    }
+]

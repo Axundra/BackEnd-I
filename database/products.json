@@ -1,0 +1,24 @@
+[
+    {
+        "id": 0,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "status": true,
+        "stock": 0,
+        "category": "",
+        "propiedad": "HardCodeado"
+    },
+    {
+        "id": 1,
+        "title": "",
+        "description": "",
+        "code": "",
+        "price": 0,
+        "status": false,
+        "stock": 0,
+        "category": "",
+        "propiedad": "HardCodeado"
+    }
+]
