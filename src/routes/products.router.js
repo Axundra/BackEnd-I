@@ -14,6 +14,7 @@ router.get("/", (req, res) => {
 //muestra un solo producto por ID
 router.get("/:productID", (req, res) => {
     const find = productos.find((el => el.id == Number(req.params.productID)))
+
     res.json(find)
 })
 
@@ -21,9 +22,21 @@ router.get("/:productID", (req, res) => {
 //agrega productos con ID incremental en base al N° de ID más grande
 router.post("/", (req, res) => {
     const ID = productos.reduce((max, el) => (el.id > max ? el.id : max), -Infinity) + 1 //ID autogenerado en base al numero maximo de ID disponible en la BBDD
-    const body = req.body
-    productos.push({ ...body, id: ID })
+    const { title, description, code, price, status, stock, category, propiedad } = req.body
+    //                                                                                              ↓ True por defecto
+    productos.push({
+        id: ID,
+        title,
+        description,
+        code,
+        price,
+        status: (status == false ? false : true),
+        stock,
+        category,
+        propiedad: "nuevo"
+    })
     fs.writeFileSync('database/products.json', JSON.stringify(productos))
+
     res.json({ ...productos })
 })
 
@@ -35,6 +48,7 @@ router.put("/:productID", (req, res) => {
 
     Object.assign(find, update)
     fs.writeFileSync('database/products.json', JSON.stringify(productos))
+
     res.json({ ...productos })
 })
 
@@ -44,6 +58,7 @@ router.delete("/:productID", (req, res) => {
     productos = productos.filter(el => el.id !== Number(req.params.productID))//crea una nueva lista sin el producto que se quiere borrar
 
     fs.writeFileSync('database/products.json', JSON.stringify(productos))
+
     res.json({ ...productos })
 })
 
