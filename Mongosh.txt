@@ -1,0 +1,10 @@
+Mongosh     ←Iniciar Mongosh
+
+show dbs    ←Mostrar BBDD
+show collections    ←Mostrar colecciones
+
+use <BBDD name>     ←Crea o te posiciona ahí
+
+db.createCollection('<Collecion name>')     ←Crea una coleccion en la BBDD posicionada
+db.Nombredelacollecion.insertOne({objeto})
+db.Nombredelacollecion.find()

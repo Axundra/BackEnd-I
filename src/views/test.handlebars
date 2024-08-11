@@ -1,0 +1,15 @@
+<div>
+    <p>mi nombre es {{nombre}} {{apellido}} </p>
+</div>   {{!-- solo 2 llaves    ↑  --}}
+<div>
+    {{#if booleano}}
+        <p> when es true </p>
+    {{else}}
+        <p> when es false </p>
+    {{/if}}
+
+    {{#each array}}
+        <div>{{this.nombre}}</div>
+        <div>{{this.apellido}}</div>
+    {{/each}}
+</div>

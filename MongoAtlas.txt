@@ -1,0 +1,3 @@
+pass : XI5zxQaG1lfzWyUI
+
+string : mongodb+srv://FacundoG:XI5zxQaG1lfzWyU@backendd.r5vfpob.mongodb.nIet/?retryWrites=true&w=majority&appName=BackEndd
